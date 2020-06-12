@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1224AF0323A0F38D00FE1375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224AF0223A0F38D00FE1375 /* AppDelegate.swift */; };
+		1224AF3323A0FD5800FE1375 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224AF3223A0FD5800FE1375 /* MapView.swift */; };
+		1224AF3523A103DA00FE1375 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224AF3423A103DA00FE1375 /* Annotation.swift */; };
+		1224AF3723A10BDE00FE1375 /* ResultsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1224AF3623A10BDE00FE1375 /* ResultsMapView.swift */; };
+		128611AA239E665B00D85B28 /* AirBnB WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 128611A9239E665B00D85B28 /* AirBnB WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		128611B0239E665B00D85B28 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128611AE239E665B00D85B28 /* Interface.storyboard */; };
+		128611B2239E665D00D85B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128611B1239E665D00D85B28 /* Assets.xcassets */; };
+		128611B9239E665E00D85B28 /* AirBnB WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 128611B8239E665E00D85B28 /* AirBnB WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		128611BE239E665E00D85B28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611BD239E665E00D85B28 /* ContentView.swift */; };
+		128611C0239E665E00D85B28 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611BF239E665E00D85B28 /* HostingController.swift */; };
+		128611C2239E665E00D85B28 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611C1239E665E00D85B28 /* ExtensionDelegate.swift */; };
+		128611C4239E665E00D85B28 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611C3239E665E00D85B28 /* NotificationController.swift */; };
+		128611C6239E665E00D85B28 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611C5239E665E00D85B28 /* NotificationView.swift */; };
+		128611C8239E665E00D85B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128611C7239E665E00D85B28 /* Assets.xcassets */; };
+		128611CB239E665E00D85B28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128611CA239E665E00D85B28 /* Preview Assets.xcassets */; };
+		128611DC239E718000D85B28 /* Stay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611DB239E718000D85B28 /* Stay.swift */; };
+		128611DE239FAC0400D85B28 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611DD239FAC0400D85B28 /* Results.swift */; };
+		128611E0239FC09F00D85B28 /* StayGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611DF239FC09F00D85B28 /* StayGetter.swift */; };
+		128611E2239FD5CD00D85B28 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128611E1239FD5CD00D85B28 /* DetailView.swift */; };
+		129B20AE23A23B2D00778C0B /* PicturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B20AD23A23B2D00778C0B /* PicturesView.swift */; };
+		129B20B023A23E1A00778C0B /* CarousselConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B20AF23A23E1A00778C0B /* CarousselConverter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		128611AB239E665B00D85B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1286119F239E665B00D85B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 128611A8239E665B00D85B28;
+			remoteInfo = "AirBnB WatchKit App";
+		};
+		128611BA239E665E00D85B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1286119F239E665B00D85B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 128611B7239E665E00D85B28;
+			remoteInfo = "AirBnB WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		128611D3239E665E00D85B28 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				128611B9239E665E00D85B28 /* AirBnB WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		128611D7239E665E00D85B28 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				128611AA239E665B00D85B28 /* AirBnB WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1224AF0223A0F38D00FE1375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1224AF3223A0FD5800FE1375 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		1224AF3423A103DA00FE1375 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		1224AF3623A10BDE00FE1375 /* ResultsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsMapView.swift; sourceTree = "<group>"; };
+		128611A5239E665B00D85B28 /* AirBnB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirBnB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		128611A9239E665B00D85B28 /* AirBnB WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirBnB WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		128611AF239E665B00D85B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		128611B1239E665D00D85B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		128611B3239E665D00D85B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128611B8239E665E00D85B28 /* AirBnB WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AirBnB WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		128611BD239E665E00D85B28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		128611BF239E665E00D85B28 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		128611C1239E665E00D85B28 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		128611C3239E665E00D85B28 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		128611C5239E665E00D85B28 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		128611C7239E665E00D85B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		128611CA239E665E00D85B28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		128611CC239E665E00D85B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128611CD239E665E00D85B28 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		128611DB239E718000D85B28 /* Stay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stay.swift; sourceTree = "<group>"; };
+		128611DD239FAC0400D85B28 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		128611DF239FC09F00D85B28 /* StayGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayGetter.swift; sourceTree = "<group>"; };
+		128611E1239FD5CD00D85B28 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		129B20AD23A23B2D00778C0B /* PicturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesView.swift; sourceTree = "<group>"; };
+		129B20AF23A23E1A00778C0B /* CarousselConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarousselConverter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		128611B5239E665E00D85B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1224AF0623A0F46100FE1375 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				128611BD239E665E00D85B28 /* ContentView.swift */,
+				128611DD239FAC0400D85B28 /* Results.swift */,
+				1224AF3623A10BDE00FE1375 /* ResultsMapView.swift */,
+				128611E1239FD5CD00D85B28 /* DetailView.swift */,
+				1224AF3223A0FD5800FE1375 /* MapView.swift */,
+				129B20AD23A23B2D00778C0B /* PicturesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1224AF0723A0F47B00FE1375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				128611DF239FC09F00D85B28 /* StayGetter.swift */,
+				128611DB239E718000D85B28 /* Stay.swift */,
+				129B20AF23A23E1A00778C0B /* CarousselConverter.swift */,
+				1224AF3423A103DA00FE1375 /* Annotation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1286119E239E665B00D85B28 = {
+			isa = PBXGroup;
+			children = (
+				128611AD239E665B00D85B28 /* AirBnB WatchKit App */,
+				128611BC239E665E00D85B28 /* AirBnB WatchKit Extension */,
+				128611A6239E665B00D85B28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		128611A6239E665B00D85B28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				128611A5239E665B00D85B28 /* AirBnB.app */,
+				128611A9239E665B00D85B28 /* AirBnB WatchKit App.app */,
+				128611B8239E665E00D85B28 /* AirBnB WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		128611AD239E665B00D85B28 /* AirBnB WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				128611AE239E665B00D85B28 /* Interface.storyboard */,
+				128611B1239E665D00D85B28 /* Assets.xcassets */,
+				128611B3239E665D00D85B28 /* Info.plist */,
+			);
+			path = "AirBnB WatchKit App";
+			sourceTree = "<group>";
+		};
+		128611BC239E665E00D85B28 /* AirBnB WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1224AF0623A0F46100FE1375 /* Views */,
+				1224AF0723A0F47B00FE1375 /* Models */,
+				128611C1239E665E00D85B28 /* ExtensionDelegate.swift */,
+				128611BF239E665E00D85B28 /* HostingController.swift */,
+				128611C3239E665E00D85B28 /* NotificationController.swift */,
+				128611C5239E665E00D85B28 /* NotificationView.swift */,
+				1224AF0223A0F38D00FE1375 /* AppDelegate.swift */,
+				128611C7239E665E00D85B28 /* Assets.xcassets */,
+				128611CC239E665E00D85B28 /* Info.plist */,
+				128611CD239E665E00D85B28 /* PushNotificationPayload.apns */,
+				128611C9239E665E00D85B28 /* Preview Content */,
+			);
+			path = "AirBnB WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		128611C9239E665E00D85B28 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				128611CA239E665E00D85B28 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		128611A4239E665B00D85B28 /* AirBnB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 128611D8239E665E00D85B28 /* Build configuration list for PBXNativeTarget "AirBnB" */;
+			buildPhases = (
+				128611A3239E665B00D85B28 /* Resources */,
+				128611D7239E665E00D85B28 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				128611AC239E665B00D85B28 /* PBXTargetDependency */,
+			);
+			name = AirBnB;
+			packageProductDependencies = (
+				1224AF3923A1104500FE1375 /* Pages */,
+			);
+			productName = AirBnB;
+			productReference = 128611A5239E665B00D85B28 /* AirBnB.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		128611A8239E665B00D85B28 /* AirBnB WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 128611D4239E665E00D85B28 /* Build configuration list for PBXNativeTarget "AirBnB WatchKit App" */;
+			buildPhases = (
+				128611A7239E665B00D85B28 /* Resources */,
+				128611D3239E665E00D85B28 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				128611BB239E665E00D85B28 /* PBXTargetDependency */,
+			);
+			name = "AirBnB WatchKit App";
+			productName = "AirBnB WatchKit App";
+			productReference = 128611A9239E665B00D85B28 /* AirBnB WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		128611B7239E665E00D85B28 /* AirBnB WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 128611D0239E665E00D85B28 /* Build configuration list for PBXNativeTarget "AirBnB WatchKit Extension" */;
+			buildPhases = (
+				128611B4239E665E00D85B28 /* Sources */,
+				128611B5239E665E00D85B28 /* Frameworks */,
+				128611B6239E665E00D85B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AirBnB WatchKit Extension";
+			productName = "AirBnB WatchKit Extension";
+			productReference = 128611B8239E665E00D85B28 /* AirBnB WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1286119F239E665B00D85B28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Nicolas Lucchetta";
+				TargetAttributes = {
+					128611A4239E665B00D85B28 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					128611A8239E665B00D85B28 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					128611B7239E665E00D85B28 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 128611A2239E665B00D85B28 /* Build configuration list for PBXProject "AirBnB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1286119E239E665B00D85B28;
+			packageReferences = (
+				1224AF3823A1104500FE1375 /* XCRemoteSwiftPackageReference "Pages" */,
+			);
+			productRefGroup = 128611A6239E665B00D85B28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				128611A4239E665B00D85B28 /* AirBnB */,
+				128611A8239E665B00D85B28 /* AirBnB WatchKit App */,
+				128611B7239E665E00D85B28 /* AirBnB WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		128611A3239E665B00D85B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		128611A7239E665B00D85B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128611B2239E665D00D85B28 /* Assets.xcassets in Resources */,
+				128611B0239E665B00D85B28 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		128611B6239E665E00D85B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128611CB239E665E00D85B28 /* Preview Assets.xcassets in Resources */,
+				128611C8239E665E00D85B28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		128611B4239E665E00D85B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128611DC239E718000D85B28 /* Stay.swift in Sources */,
+				128611E2239FD5CD00D85B28 /* DetailView.swift in Sources */,
+				128611C0239E665E00D85B28 /* HostingController.swift in Sources */,
+				129B20B023A23E1A00778C0B /* CarousselConverter.swift in Sources */,
+				1224AF3323A0FD5800FE1375 /* MapView.swift in Sources */,
+				1224AF0323A0F38D00FE1375 /* AppDelegate.swift in Sources */,
+				128611BE239E665E00D85B28 /* ContentView.swift in Sources */,
+				128611C4239E665E00D85B28 /* NotificationController.swift in Sources */,
+				129B20AE23A23B2D00778C0B /* PicturesView.swift in Sources */,
+				1224AF3723A10BDE00FE1375 /* ResultsMapView.swift in Sources */,
+				128611DE239FAC0400D85B28 /* Results.swift in Sources */,
+				128611C2239E665E00D85B28 /* ExtensionDelegate.swift in Sources */,
+				128611C6239E665E00D85B28 /* NotificationView.swift in Sources */,
+				1224AF3523A103DA00FE1375 /* Annotation.swift in Sources */,
+				128611E0239FC09F00D85B28 /* StayGetter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		128611AC239E665B00D85B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 128611A8239E665B00D85B28 /* AirBnB WatchKit App */;
+			targetProxy = 128611AB239E665B00D85B28 /* PBXContainerItemProxy */;
+		};
+		128611BB239E665E00D85B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 128611B7239E665E00D85B28 /* AirBnB WatchKit Extension */;
+			targetProxy = 128611BA239E665E00D85B28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		128611AE239E665B00D85B28 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				128611AF239E665B00D85B28 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		128611CE239E665E00D85B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		128611CF239E665E00D85B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		128611D1239E665E00D85B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AirBnB WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AirBnB WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.AirBnB.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		128611D2239E665E00D85B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AirBnB WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AirBnB WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.AirBnB.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		128611D5239E665E00D85B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				IBSC_MODULE = AirBnB_WatchKit_Extension;
+				INFOPLIST_FILE = "AirBnB WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.AirBnB.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		128611D6239E665E00D85B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				IBSC_MODULE = AirBnB_WatchKit_Extension;
+				INFOPLIST_FILE = "AirBnB WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.AirBnB.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		128611D9239E665E00D85B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.AirBnB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		128611DA239E665E00D85B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN5JJ5XQZ6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NLCompany.AirBnB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		128611A2239E665B00D85B28 /* Build configuration list for PBXProject "AirBnB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				128611CE239E665E00D85B28 /* Debug */,
+				128611CF239E665E00D85B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		128611D0239E665E00D85B28 /* Build configuration list for PBXNativeTarget "AirBnB WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				128611D1239E665E00D85B28 /* Debug */,
+				128611D2239E665E00D85B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		128611D4239E665E00D85B28 /* Build configuration list for PBXNativeTarget "AirBnB WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				128611D5239E665E00D85B28 /* Debug */,
+				128611D6239E665E00D85B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		128611D8239E665E00D85B28 /* Build configuration list for PBXNativeTarget "AirBnB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				128611D9239E665E00D85B28 /* Debug */,
+				128611DA239E665E00D85B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1224AF3823A1104500FE1375 /* XCRemoteSwiftPackageReference "Pages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nachonavarro/Pages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1224AF3923A1104500FE1375 /* Pages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1224AF3823A1104500FE1375 /* XCRemoteSwiftPackageReference "Pages" */;
+			productName = Pages;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1286119F239E665B00D85B28 /* Project object */;
+}
